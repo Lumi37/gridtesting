@@ -10,7 +10,7 @@
     font-size: 40px;
     text-align: center;
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid rgb(165, 165, 165, 0.3);
 }
 
 /* typing Area */
@@ -50,10 +50,27 @@
 /* USESNAME ICON AREA  */
 .userIconUsernameContainer {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     place-items: center;
     grid-row: 1;
     grid-column: 3/8;
+}
+
+.userProfilePicture:hover {
+    opacity: 0.3;
+}
+
+.saveNameButton:hover {
+    opacity: 0.3;
+}
+
+.editNameButton:hover {
+    opacity: 0.3;
+}
+
+.userIconUsernameContainer>div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .userIconUsernameContainer>div>img {
@@ -63,14 +80,33 @@
     background-color: white;
     border-radius: 50%;
     border: 1px solid grey;
+    cursor: pointer;
     padding: 2px;
 }
+
+.userIconUsernameContainer>div>div>img {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+    padding: 2px;
+}
+
 
 .userIconUsernameContainer>div>input[type="text"] {
     font-size: 40px;
     font-family: cursive;
     border-radius: 15px;
+    border: 1px solid rgb(165, 165, 165, 0.3);
 
+}
+
+.userIconUsernameContainer>div>input[type="text"] :focus-visible {
+    outline: none;
 }
 
 
@@ -116,7 +152,12 @@
     grid-column: 1;
 }
 
+#emoji:hover {
+    opacity: 0.3;
+}
+
 #emoji {
+    cursor: pointer;
     opacity: 60%;
     width: 50px;
     height: 50px;
@@ -129,7 +170,12 @@
     grid-column: 5/6;
 }
 
+#paperAirplane:hover {
+    opacity: 0.3;
+}
+
 #paperAirplane {
+    cursor: pointer;
     width: 50px;
     height: 50px;
 }
