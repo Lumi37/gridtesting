@@ -1,0 +1,15 @@
+const webSocket = new WebSocket('ws://localhost:3001');
+// const textfieldName = document.querySelector('#username')
+// const saveButton = document.querySelector("#saveButton")
+// const textfieldMessage = document.querySelector('#typingArea')
+// const chat = document.querySelector("#chat")
+// const sendButton = document.querySelector("#paperAirplane")
+// const list = document.querySelector('#list')
+// const refreshButton = document.querySelector('#refreshList')
+// const editNameButton = document.querySelector('#editname')
+// const uploadButton = document.querySelector('#uploadButton')
+// const storageID = localStorage.getItem('ClientID')
+//const hiddenIDfield = document.querySelector('#userID')
+save.addEventListener('click',e=>{
+    console.log(e)
+})
