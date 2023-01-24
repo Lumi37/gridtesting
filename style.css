@@ -11,7 +11,7 @@ html {
 } */
 #otherUser {
     position: relative;
-    right: 50%;
+    left: 2%;
     background-color: red;
     width: max-content;
     padding: 5px;
@@ -19,6 +19,7 @@ html {
 
 #mainUser {
     position: relative;
+    left: 80%;
     background-color: blue;
     width: max-content;
     padding: 5px;
