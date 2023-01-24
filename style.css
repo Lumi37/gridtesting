@@ -4,12 +4,26 @@ html {
 
 }
 
-.chat {
+/* .chat {
     display: grid;
     grid-template-columns: auto auto;
 
+} */
+#otherUser {
+    position: relative;
+    right: 50%;
+    background-color: red;
+    width: max-content;
+    padding: 5px;
 }
 
+#mainUser {
+    position: relative;
+    background-color: blue;
+    width: max-content;
+    padding: 5px;
+
+}
 
 #onlinestatus {
     width: 15px;
