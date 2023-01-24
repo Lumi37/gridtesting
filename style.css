@@ -4,6 +4,13 @@ html {
 
 }
 
+.chat {
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+
+
 #onlinestatus {
     width: 15px;
     height: 15px;

@@ -12,9 +12,12 @@
 
 <body>
     <div class="container">
+        <!-- SEARCH BAR -->
         <div class="searchContainer">
             <div><img src="images/searchicon.png" alt=""><input type="text" id="searchBar" placeholder="Search"></div>
         </div>
+
+        <!-- LIST  -->
         <div class="listContainer">
             <div class="refreshIconContainer"><img src="images/refreshicon.png" id="refreshIcon" alt=""></div>
 
@@ -24,8 +27,7 @@
                         <div id="onlinestatus"></div>
                     </div>
                     <div>
-                        <div id="userListName">Kostas</div>
-                        <div id="userLastMessage">kapapapapap</div>
+
                     </div>
                     <div id="dateContainer">
                         <div id="lastOnline">48h</div>
@@ -34,6 +36,8 @@
             </ul>
 
         </div>
+
+        <!-- USER PROFILE AND USERNAME -->
         <div class="userIconUsernameContainer">
             <div>
                 <img class="userProfilePicture" id="uploadButton" src="images/default.png" alt="default">
@@ -44,7 +48,14 @@
                 </div>
             </div>
         </div>
-        <div class="textsContainer" id="chat">chat</div>
+
+        <!-- CHAT - MESSAGE DISPLAY -->
+        <div class="textsContainer" id="chat">
+            <div id="otherUser"></div>
+            <div id="mainUser"></div>
+        </div>
+
+        <!-- USER TYPING AREA -->
         <div class="textTypingContainer">
             <div class="emoji">
                 <img src="images/smiley.png" id="emoji" alt="emojis">
