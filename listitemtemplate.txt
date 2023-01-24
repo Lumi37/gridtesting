@@ -1,0 +1,12 @@
+<li class="listItemsContainer">
+                    <div id="imgContainerList"><img src="images/dude.jpg" id="listUserIcon" alt="">
+                        <div id="onlinestatus"></div>
+                    </div>
+                    <div>
+                        <div id="userListName">Kostas</div>
+                        <div id="userLastMessage">kapapapapap</div>
+                    </div>
+                    <div id="dateContainer">
+                        <div id="lastOnline">48h</div>
+                    </div>
+                </li>
