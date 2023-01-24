@@ -154,6 +154,7 @@
 
 #emoji:hover {
     opacity: 0.3;
+    justify-self: start;
 }
 
 #emoji {
