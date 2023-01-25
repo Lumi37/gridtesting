@@ -50,23 +50,27 @@
             </div>
         </div>
 
-        <!-- CHAT - MESSAGE DISPLAY -->
-        <div class="textsContainer" id="chat">
-            <div id="otherUser">kekek</div>
-            <div id="mainUser">elele</div>
+        <!-- CHAT - MESSAGE DISPLAY - TYPING -->
+        <div class="chatContainer" id="chat">
+
+            <!-- MESSAGES DISPLAY -->
+            <div class="messagesDisplay" id="messagesDisplay"></div>
+
+            <!-- USER TYPING AREA -->
+            <div class="textTypingContainer">
+                <div class="emoji">
+                    <img src="images/smiley.png" id="emoji" alt="emojis">
+                </div>
+                <textarea type="text" class="textTypingArea" id="typingArea"
+                    placeholder="type your message here."></textarea>
+                <div class="paperAirplane">
+                    <img src="images/paperAirplane.jpg" id="paperAirplane" alt="">
+                </div>
+            </div>
+
         </div>
 
-        <!-- USER TYPING AREA -->
-        <div class="textTypingContainer">
-            <div class="emoji">
-                <img src="images/smiley.png" id="emoji" alt="emojis">
-            </div>
-            <textarea type="text" class="textTypingArea" id="typingArea"
-                placeholder="type your message here."></textarea>
-            <div class="paperAirplane">
-                <img src="images/paperAirplane.jpg" id="paperAirplane" alt="">
-            </div>
-        </div>
+
     </div>
 </body>
 

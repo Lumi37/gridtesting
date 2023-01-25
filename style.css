@@ -4,26 +4,8 @@ html {
 
 }
 
-/* .chat {
-    display: grid;
-    grid-template-columns: auto auto;
-
-} */
-#otherUser {
-    position: relative;
-    left: 2%;
-    background-color: red;
-    width: max-content;
-    padding: 5px;
-}
-
-#mainUser {
-    position: relative;
-    left: 80%;
-    background-color: blue;
-    width: max-content;
-    padding: 5px;
-
+body {
+    margin: 0;
 }
 
 #onlinestatus {
@@ -65,8 +47,8 @@ ul {
 .container {
     background-color: rgb(39, 225, 231);
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-columns: 0.4fr auto;
+    grid-template-rows: 0.1fr auto;
     height: 100vh;
 }
 
@@ -77,22 +59,22 @@ ul {
     border: 1px solid rgb(165, 165, 165, 0.3);
 }
 
-/* typing Area */
-.container>input {
-    font-size: 22px;
-    text-align: left;
-    background-color: white;
-    border: 1px solid gray;
-}
 
-
+/* SEARCH BAR grid item top left */
 .searchContainer {
     display: grid;
     place-items: center;
     grid-row: 1;
-    grid-column: 1/3;
+    grid-column: 1;
     border-right: 2px solid rgb(167, 166, 166);
 
+}
+
+.searchContainer>div {
+    width: 50%;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid rgb(192, 192, 192);
 }
 
 .searchContainer>div>img {
@@ -100,29 +82,25 @@ ul {
     height: 30px;
 }
 
-.searchContainer>div {
-    padding: 5px;
-    border-radius: 15px;
-    border: 1px solid rgb(192, 192, 192);
-}
 
 /* Search input */
 .searchContainer>div>input {
+    width: 70%;
     border: none;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.5rem;
 }
 
 #searchBar:focus-visible {
     outline: none;
 }
 
-
+/* LIST grid item bottom left */
 .listContainer {
     display: grid;
     grid-template-rows: min-content auto;
-    grid-column: 1/3;
-    grid-row: 2/9;
+    grid-row: 2;
+    grid-column: 1;
 }
 
 .listItemsContainer {
@@ -202,13 +180,13 @@ ul {
     border-radius: 20px;
 }
 
-/* USESNAME ICON AREA  */
+/* USESNAME ICON AREA  grid item top right*/
 .userIconUsernameContainer {
     display: grid;
     grid-template-columns: auto;
     place-items: center;
     grid-row: 1;
-    grid-column: 3/8;
+    grid-column: 2;
 }
 
 .userProfilePicture:hover {
@@ -244,6 +222,7 @@ ul {
 .userIconUsernameContainer>div {
     display: grid;
     grid-template-columns: auto auto auto auto;
+
 }
 
 .userIconUsernameContainer>div>img {
@@ -271,7 +250,9 @@ ul {
 
 
 .userIconUsernameContainer>div>input[type="text"] {
-    font-size: 40px;
+    height: 3rem;
+    margin-top: 1.5rem;
+    font-size: 1rem;
     font-family: cursive;
     border-radius: 15px;
     border: 1px solid rgb(165, 165, 165, 0.3);
@@ -282,22 +263,57 @@ ul {
     outline: none;
 }
 
-
-
-.textsContainer {
-    grid-column: 3/8;
-    grid-row: 2/8;
+/* CHATTING AREA  grid item bottom right*/
+.chatContainer {
+    grid-row: 2;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /*  grid-template-rows: 1fr 0.1fr; */
+    font-size: 1.5rem;
 }
 
-/* TYPING TEXT AREA */
+.messagesDisplay {
+    grid-row: 1;
+    background-color: rgb(243, 243, 148);
+    overflow-y: scroll;
+}
+
+
+
+.messagesDisplay>p {
+    border-radius: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#otherUser {
+    position: relative;
+    left: 2%;
+    background-color: red;
+    width: max-content;
+    padding: 5px;
+}
+
+#mainUser {
+    position: relative;
+    left: 80%;
+    background-color: blue;
+    width: max-content;
+    padding: 5px;
+
+}
+
+
+/* TYPING TEXT AREA grid item of chatContainer*/
 .textTypingContainer {
-    grid-column: 3/8;
-    grid-row: 8;
+    grid-row: 2;
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 5px;
     background-color: white;
+    height: 4.8rem;
 }
 
 .textTypingContainer>textarea {
@@ -354,4 +370,13 @@ ul {
     cursor: pointer;
     width: 50px;
     height: 50px;
+}
+
+
+/* typing Area */
+.container>input {
+    font-size: 22px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid gray;
 }
