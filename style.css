@@ -268,7 +268,7 @@ ul {
     grid-row: 2;
     grid-column: 2;
     display: grid;
-    grid-template-rows: 1fr auto;
+    grid-template-rows: 81vh auto;
     /*  grid-template-rows: 1fr 0.1fr; */
     font-size: 1.5rem;
 }
@@ -282,6 +282,7 @@ ul {
 
 
 .messagesDisplay>p {
+    word-wrap: break-word;
     border-radius: 15px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -314,6 +315,7 @@ ul {
     border-radius: 5px;
     background-color: white;
     height: 4.8rem;
+    padding: 3px;
 }
 
 .textTypingContainer>textarea {

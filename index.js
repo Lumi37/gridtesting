@@ -1,5 +1,5 @@
 const webSocket = new WebSocket('ws://localhost:3001');
-// const textfieldName = document.querySelector('#username')
+const textfieldName = document.querySelector('#username')
 const saveButton = document.querySelector("#saveButton")
 // // const textfieldMessage = document.querySelector('#typingArea')
 //  const chat = document.querySelector("#chat")
@@ -12,6 +12,10 @@ const saveButton = document.querySelector("#saveButton")
 // const storageID = localStorage.getItem('ClientID')
 //const hiddenIDfield = document.querySelector('#userID')
 saveButton.addEventListener('click',e=>{
-    content.innerHTML+= `            <p id="otherUser">otherUser</p>
+    content.innerHTML+= `            <p id="otherUser">otherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUserotherUser</p>
     <p id="mainUser">mainUser</p>`
+})
+
+content.addEventListener('scroll', e=>{
+    console.log(`scrollTop: ${content.scrollTop}`)
 })
